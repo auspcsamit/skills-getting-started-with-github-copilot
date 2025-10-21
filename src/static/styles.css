@@ -142,3 +142,61 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants {
+  margin-top: 12px;
+  padding-left: 0; /* hide default bullets */
+
+.participants > strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #1a237e;
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+  padding: 6px 10px;
+  background: #f1f8ff;
+  border-radius: 6px;
+  border: 1px solid #dbeeff;
+  color: #0b3d91;
+  list-style: none; /* remove bullets */
+}
+
+.participant-email {
+  word-break: break-all;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background: rgba(198, 40, 40, 0.08);
+}
+}
+
+.participants-list li {
+  margin-bottom: 8px;
+  padding: 6px 10px;
+  background: #f1f8ff;
+  border-radius: 6px;
+  border: 1px solid #dbeeff;
+  color: #0b3d91;
+  list-style-position: inside;
+}
+
+.participants.no-participants .muted {
+  margin-top: 6px;
+  color: #666;
+  font-style: italic;
+  font-size: 0.95rem;
+}
